@@ -13,7 +13,8 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log("data", data);
   return (
     <div className={styles.container}>
       <Head>
